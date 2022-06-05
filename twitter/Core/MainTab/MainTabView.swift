@@ -19,36 +19,30 @@ struct MainTabView: View {
                 .tabItem {
                     Image(systemName: "house")
                 }.tag(0)
-        }
-        
-        TabView(selection: $selectedIndex) {
-            ContentView()
+            
+            ExploreView()
                 .onTapGesture {
-                    self.selectedIndex = 1
+                    self.selectedIndex = 0
                 }
                 .tabItem {
-                    Image(systemName: "house")
-                }.tag(1)
-        }
-        
-        TabView(selection: $selectedIndex) {
-            ContentView()
+                    Image(systemName: "magnifyingglass")
+                }.tag(0)
+            
+            NotificationsView()
                 .onTapGesture {
-                    self.selectedIndex = 2
+                    self.selectedIndex = 0
                 }
                 .tabItem {
-                    Image(systemName: "house")
-                }.tag(2)
-        }
-        
-        TabView(selection: $selectedIndex) {
-            ContentView()
+                    Image(systemName: "bell")
+                }.tag(0)
+            
+            MessagesView()
                 .onTapGesture {
-                    self.selectedIndex = 3
+                    self.selectedIndex = 0
                 }
                 .tabItem {
-                    Image(systemName: "house")
-                }.tag(3)
+                    Image(systemName: "envelope")
+                }.tag(0)
         }
     }
 }
