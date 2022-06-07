@@ -12,6 +12,7 @@ struct RegistrationView: View {
     @State private var username = ""
     @State private var fullname = ""
     @State private var password = ""
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         VStack {
@@ -37,7 +38,35 @@ struct RegistrationView: View {
             }
             .padding(32)
             
+            Button {
+                print("Sign up here...")
+            } label: {
+                Text("Sign up")
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .frame(width: 340, height: 50)
+                    .background(Color(.systemBlue))
+                    .clipShape(Capsule())
+                    .padding()
+            }
+            .shadow(color: .gray.opacity(0.5), radius: 10, x: 0, y: 0)
+            
             Spacer()
+            
+            Button {
+                presentationMode.wrappedValue.dismiss()
+            } label: {
+                HStack{
+                    Text("Already have an account?")
+                        .font(.footnote)
+                    
+                    Text("Sign in")
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+                }
+            }
+            .padding(.bottom, 32)
+
         }.ignoresSafeArea()
     }
 }
