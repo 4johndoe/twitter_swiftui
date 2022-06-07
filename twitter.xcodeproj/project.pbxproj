@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43445A35284FC7CC00E07D0B /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43445A34284FC7CC00E07D0B /* TextArea.swift */; };
 		4382B905284CECDC003CB5F4 /* twitterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4382B904284CECDC003CB5F4 /* twitterApp.swift */; };
 		4382B907284CECDC003CB5F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4382B906284CECDC003CB5F4 /* ContentView.swift */; };
 		4382B909284CECDE003CB5F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4382B908284CECDE003CB5F4 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43445A34284FC7CC00E07D0B /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 		4382B901284CECDC003CB5F4 /* twitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4382B904284CECDC003CB5F4 /* twitterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twitterApp.swift; sourceTree = "<group>"; };
 		4382B906284CECDC003CB5F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,8 +104,8 @@
 		4382B912284CED74003CB5F4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				43893E5E284E9E6000F45F0D /* UploadTweets */,
 				4382B916284CEDCE003CB5F4 /* Components */,
+				43893E5E284E9E6000F45F0D /* UploadTweets */,
 				4382B937284D1C11003CB5F4 /* SideMenu */,
 				4382B925284CF921003CB5F4 /* Profile */,
 				4382B924284CF8BB003CB5F4 /* Explore */,
@@ -141,6 +143,7 @@
 			children = (
 				4382B934284D18CE003CB5F4 /* Users */,
 				4382B91C284CEF30003CB5F4 /* Tweets */,
+				43445A34284FC7CC00E07D0B /* TextArea.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				4382B929284CF982003CB5F4 /* NotificationsView.swift in Sources */,
 				4382B905284CECDC003CB5F4 /* twitterApp.swift in Sources */,
 				4382B93F284D1C59003CB5F4 /* SideMenuViewModel.swift in Sources */,
+				43445A35284FC7CC00E07D0B /* TextArea.swift in Sources */,
 				4382B936284D18E5003CB5F4 /* UserRowView.swift in Sources */,
 				43893E62284F1F6500F45F0D /* NewTweetView.swift in Sources */,
 				4382B946284D3A68003CB5F4 /* SideMenuRowOptionView.swift in Sources */,
