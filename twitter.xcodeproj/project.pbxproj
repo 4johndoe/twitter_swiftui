@@ -35,6 +35,7 @@
 		4382B942284D1DF5003CB5F4 /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4382B941284D1DF5003CB5F4 /* UserStatsView.swift */; };
 		4382B946284D3A68003CB5F4 /* SideMenuRowOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4382B945284D3A68003CB5F4 /* SideMenuRowOptionView.swift */; };
 		43893E62284F1F6500F45F0D /* NewTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43893E61284F1F6500F45F0D /* NewTweetView.swift */; };
+		439001B52852855D00E37830 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439001B42852855D00E37830 /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		4382B941284D1DF5003CB5F4 /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
 		4382B945284D3A68003CB5F4 /* SideMenuRowOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowOptionView.swift; sourceTree = "<group>"; };
 		43893E61284F1F6500F45F0D /* NewTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetView.swift; sourceTree = "<group>"; };
+		439001B42852855D00E37830 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		43445A37284FCB6400E07D0B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				439001B42852855D00E37830 /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				43445A3A284FCB7700E07D0B /* LoginView.swift in Sources */,
 				43445A3C284FCB8200E07D0B /* RegistrationView.swift in Sources */,
 				43893E62284F1F6500F45F0D /* NewTweetView.swift in Sources */,
+				439001B52852855D00E37830 /* AuthViewModel.swift in Sources */,
 				43445A3E284FCCA900E07D0B /* RoundedShape.swift in Sources */,
 				4382B946284D3A68003CB5F4 /* SideMenuRowOptionView.swift in Sources */,
 				4382B927284CF96A003CB5F4 /* ExploreView.swift in Sources */,

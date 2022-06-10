@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>884474605799-t6uem4u5jofvropmimfenk3ivajch35p.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.884474605799-t6uem4u5jofvropmimfenk3ivajch35p</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBNev6JSifA0snep-EzrrvVlv2B8gxk9Fs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>884474605799</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>local.gerchik.quiz.twitter</string>
+	<key>PROJECT_ID</key>
+	<string>vuejs-crm-d9aac</string>
+	<key>STORAGE_BUCKET</key>
+	<string>vuejs-crm-d9aac.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:884474605799:ios:28174ca5279d209442f242</string>
+	<key>DATABASE_URL</key>
+	<string>https://vuejs-crm-d9aac.firebaseio.com</string>
+</dict>
+</plist>
