@@ -24,7 +24,7 @@ struct FeedView: View {
             Button  {
                 showNewTweetView.toggle()
             } label: {
-                Image("tweet")
+                Image(systemName: "plus")
                     .resizable()
                     .renderingMode(.template)
                     .frame(width: 28, height: 28)
