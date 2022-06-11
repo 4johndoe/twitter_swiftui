@@ -19,6 +19,7 @@
 		43445A452850CF7600E07D0B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43445A442850CF7600E07D0B /* GoogleService-Info.plist */; };
 		4367B8782853E4A700076C7B /* ProfilePhotoSelecterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4367B8772853E4A700076C7B /* ProfilePhotoSelecterView.swift */; };
 		4367B87B28547C3D00076C7B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4367B87A28547C3D00076C7B /* ImagePicker.swift */; };
+		4367B87D28549C3A00076C7B /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4367B87C28549C3A00076C7B /* ImageUploader.swift */; };
 		4382B905284CECDC003CB5F4 /* twitterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4382B904284CECDC003CB5F4 /* twitterApp.swift */; };
 		4382B907284CECDC003CB5F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4382B906284CECDC003CB5F4 /* ContentView.swift */; };
 		4382B909284CECDE003CB5F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4382B908284CECDE003CB5F4 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		43445A442850CF7600E07D0B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		4367B8772853E4A700076C7B /* ProfilePhotoSelecterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelecterView.swift; sourceTree = "<group>"; };
 		4367B87A28547C3D00076C7B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		4367B87C28549C3A00076C7B /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		4382B901284CECDC003CB5F4 /* twitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4382B904284CECDC003CB5F4 /* twitterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twitterApp.swift; sourceTree = "<group>"; };
 		4382B906284CECDC003CB5F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 		4382B915284CED7E003CB5F4 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				4367B87C28549C3A00076C7B /* ImageUploader.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				4367B87B28547C3D00076C7B /* ImagePicker.swift in Sources */,
 				4382B907284CECDC003CB5F4 /* ContentView.swift in Sources */,
 				43445A43284FDF8300E07D0B /* AuthHeaderView.swift in Sources */,
+				4367B87D28549C3A00076C7B /* ImageUploader.swift in Sources */,
 				4382B91E284CEF94003CB5F4 /* TweetRowView.swift in Sources */,
 				43445A40284FDCB300E07D0B /* CustomInputField.swift in Sources */,
 				4367B8782853E4A700076C7B /* ProfilePhotoSelecterView.swift in Sources */,
