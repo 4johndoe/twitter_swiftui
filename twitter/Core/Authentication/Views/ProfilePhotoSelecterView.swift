@@ -39,6 +39,21 @@ struct ProfilePhotoSelecterView: View {
             }
             .padding(.top, 44)
             
+            if profileImage != nil {
+                Button {
+                    print("DEBUG: Finish registering user...")
+                } label: {
+                    Text("Continue")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .frame(width: 340, height: 50)
+                        .background(Color(.systemBlue))
+                        .clipShape(Capsule())
+                        .padding()
+                }
+                .shadow(color: .gray.opacity(0.5), radius: 10, x: 0, y: 0)
+            }
+            
             Spacer()
         }
         .ignoresSafeArea()
