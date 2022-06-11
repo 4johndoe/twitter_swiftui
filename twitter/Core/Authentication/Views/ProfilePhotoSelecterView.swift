@@ -19,9 +19,9 @@ struct ProfilePhotoSelecterView: View {
                 Image(systemName: "photo")
                     .resizable()
                     .renderingMode(.template)
-//                    .foregroundColor(Color(.systemBlue))
-                    .scaledToFill()
-                    .frame(width: 180, height: 180)
+                    .foregroundColor(Color(.systemBlue))
+                    .scaledToFit()
+                    .frame(width: 160, height: 160)
                     .padding(.top, 44)
             }
             

@@ -11,11 +11,12 @@ import CoreMedia
 
 class AuthViewModel: ObservableObject {
     @Published var userSession: Firebase.User?
+    @Published var didAuthenticateUser = false
     
     init() {
         self.userSession = Auth.auth().currentUser
         
-        print("DEBUG: User session is \(String(describing: self.userSession?.uid))")
+        print("DEBUG: User session is \(self.userSession?.uid ?? "")")
     }
     
     func login(withEmail email: String, password: String) {
@@ -40,10 +41,9 @@ class AuthViewModel: ObservableObject {
             }
             
             guard let user = result?.user else { return }
-            self.userSession = user
             
             print("DEBUG: Registered user successfully")
-            print("DEBUG: User is \(self.userSession)")
+            print("DEBUG: User is \(self.userSession?.uid ?? "")")
             
             let data = ["email": email,
                         "username": username.lowercased(),
@@ -53,7 +53,7 @@ class AuthViewModel: ObservableObject {
             Firestore.firestore().collection("users")
                 .document(user.uid)
                 .setData(data){ _ in
-                    print("DEBUG: Did upload user data..")
+                    self.didAuthenticateUser = true
                 }
         }
     }
