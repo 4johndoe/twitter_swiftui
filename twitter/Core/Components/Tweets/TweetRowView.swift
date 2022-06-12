@@ -6,35 +6,41 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct TweetRowView: View {
     let tweet: Tweet
     
     var body: some View {
         VStack(alignment: .leading){
-            // profile image + user info + tweet
-            HStack(alignment: .top, spacing: 12) {
-                Circle()
-                    .frame(width: 56, height: 56)
-                    .foregroundColor(Color(.systemBlue))
-                // user info & tweet caption
-                VStack(alignment: .leading, spacing: 4){
-                    HStack{
-                        Text(tweet.user?.fullname ?? "")
-                            .font(.subheadline).bold()
+            
+            if let user = tweet.user {
+                // profile image + user info + tweet
+                HStack(alignment: .top, spacing: 12) {
+                    KFImage(URL(string: user.profileImageUrl))
+                        .resizable()
+                        .scaledToFill()
+                        .clipShape(Circle())
+                        .frame(width: 56, height: 56)
+                    // user info & tweet caption
+                    VStack(alignment: .leading, spacing: 4){
+                        HStack{
+                            Text(user.fullname)
+                                .font(.subheadline).bold()
+                            
+                            Text(user.username)
+                                .foregroundColor(.gray)
+                                .font(.caption)
+                            
+                            Text("2w")
+                                .foregroundColor(.gray)
+                                .font(.caption)
+                        }
                         
-                        Text(tweet.user?.username ?? "")
-                            .foregroundColor(.gray)
-                            .font(.caption)
-                        
-                        Text("2w")
-                            .foregroundColor(.gray)
-                            .font(.caption)
+                        Text(tweet.caption)
+                            .font(.subheadline)
+                            .multilineTextAlignment(.leading)
                     }
-                    
-                    Text(tweet.caption)
-                        .font(.subheadline)
-                        .multilineTextAlignment(.leading)
                 }
             }
             
