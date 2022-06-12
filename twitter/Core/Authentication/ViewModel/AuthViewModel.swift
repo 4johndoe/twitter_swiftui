@@ -12,6 +12,7 @@ import CoreMedia
 class AuthViewModel: ObservableObject {
     @Published var userSession: Firebase.User?
     @Published var didAuthenticateUser = false
+    @Published var currentUser: User?
     private var tempUserSession: Firebase.User?
     
     private let service = UserService()
@@ -80,6 +81,8 @@ class AuthViewModel: ObservableObject {
     func fetchUser() {
         guard let uid = self.userSession?.uid else { return }
         
-        service.fetchUser(withUid: uid)
+        service.fetchUser(withUid: uid) { user in
+            self.currentUser = user
+        }
     }
 }
