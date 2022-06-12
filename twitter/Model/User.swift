@@ -13,4 +13,6 @@ struct User: Identifiable, Decodable, Hashable {
     let fullname: String
     let profileImageUrl: String
     let email: String
+    
+//    let tweets
 }
