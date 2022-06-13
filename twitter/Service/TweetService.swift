@@ -48,4 +48,8 @@ struct TweetService{
                 completion(tweets.sorted(by: { $0.timestamp.dateValue() > $1.timestamp.dateValue() }))
         }
     }
+    
+    func likeTweet() {
+        print("DEBUG: Like tweet here...")
+    }
 }
