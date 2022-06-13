@@ -6,17 +6,19 @@
 //
 
 import Foundation
+import Firebase
 
 class TweetRowViewModel: ObservableObject {
-    
+    @Published var tweet: Tweet
     private let service = TweetService()
-    let tweet: Tweet
     
     init(tweet: Tweet) {
         self.tweet = tweet
     }
     
     func likeTweet() {
-        service.likeTweet()
+        service.likeTweet(tweet) {
+            self.tweet.didLike = true
+        }
     }
 }
