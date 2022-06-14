@@ -9,7 +9,7 @@ import SwiftUI
 import Kingfisher
 
 struct TweetRowView: View {
-    let viewModel: TweetRowViewModel
+    @ObservedObject var viewModel: TweetRowViewModel
     
     init(tweet: Tweet) {
         self.viewModel = TweetRowViewModel(tweet: tweet)
